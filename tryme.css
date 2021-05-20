@@ -1,0 +1,142 @@
+html , body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page {
+   background-color: #b4b4b496; 
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.title {
+    margin: 0;
+    background-color: #aaa8a5;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+}
+
+.statement {
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px; 
+    padding-right: 50px; 
+}
+
+.slideshow_container {
+    margin: auto;
+    max-width: 600px;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.footer {
+    min-height: 72px;
+    background-color: #afadab; 
+    margin-top: auto;
+    display: flex;
+}
+
+.button {
+    margin: auto;
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
+.popup {
+    position:absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup_conteiner {
+    max-width: 615px;
+    background-color: #cecdcb;
+    margin: auto;
+    padding: 20px 40px;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+@media (max-width: 425px) {
+    .popup_conteiner {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 8px 16px;
+    }
+    .popup_title {
+    font-size: 27px;
+    line-height: 33px;
+    }
+}
+
+.popup_title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+}
+
+.popup_image {
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.poppup_description {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.popup_list {
+    margin: 2px;
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+}
