@@ -1,5 +1,5 @@
-const buttonElement1 = document.getElementById('experience');
-const popupElement1 = document.getElementById('popup.experience');
+const buttonElement1 = document.getElementById('about');
+const popupElement1 = document.getElementById('popup.about');
 const buttonElement2 = document.getElementById('hobby');
 const popupElement2 = document.getElementById('popup.hobby');
 const buttonElement3 = document.getElementById('contacts');
@@ -48,6 +48,5 @@ function showSlides() {
     if (slideIndex > slides.length) {slideIndex = 1}
    slides [slideIndex-1].style.display = "block";
    setTimeout(showSlides, 4000);
-   dots [slideIndex-1].className += "active";
  }
  

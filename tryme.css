@@ -2,36 +2,36 @@ html , body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: 'Courier New', monospace;
+    line-height: 1.4;
 }
 
 .page {
-   min-height: 100%;
-   display: flex;
-   flex-direction: column;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
     margin: 0;
     background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: 'Courier New', monospace;
     font-size: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .slideshow_container {
-    position: relative;
     top: 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+    opacity: .5;
 }
 
 .mySlides {
     display: none;
-    width: 1000px;
-    height: 200px;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -45,10 +45,25 @@ html , body {
     to {opacity: 1}
 }
 
-.blocks {
-    margin: auto;
-    font-family: 'Courier New', monospace;
-    font-size: 30px; 
+section {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.experience {
+    padding: 20px 20px;
+    width: 60%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 100%;
+    padding: 20px 20px;
 }
 
 .footer {
@@ -61,7 +76,6 @@ html , body {
 .button {
     margin: auto;
     background-color: transparent;
-    font-family: 'Courier New', monospace;
     text-decoration: underline;
     border: none;
     cursor: pointer;
@@ -78,11 +92,9 @@ html , body {
     bottom: 0;
     left: 0;
     right: 0;
-    font-family: 'Courier New', monospace;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
     visibility: hidden;
     opacity: 0;
-
     transition: all 0.5s ease-in-out;
 }
 
@@ -93,7 +105,7 @@ html , body {
 
 .popup_conteiner {
     max-width: 615px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(163, 160, 160, 0.9);
     margin: auto;
     padding: 20px 40px;
     font-size: 24px;
