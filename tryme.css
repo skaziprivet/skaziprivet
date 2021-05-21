@@ -5,7 +5,6 @@ html , body {
 }
 
 .page {
-   background-color: #b4b4b496; 
    min-height: 100%;
    display: flex;
    flex-direction: column;
@@ -13,35 +12,27 @@ html , body {
 
 .title {
     margin: 0;
-    background-color: #aaa8a5;
+    background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 60px;
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.content {
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-}
-
-.statement {
-    margin: auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 30px; 
-    padding-right: 50px; 
-}
-
 .slideshow_container {
-    margin: auto;
-    max-width: 600px;
     position: relative;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 
 .mySlides {
     display: none;
+    width: 1000px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .fade {
@@ -54,9 +45,15 @@ html , body {
     to {opacity: 1}
 }
 
+.blocks {
+    margin: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 30px; 
+}
+
 .footer {
     min-height: 72px;
-    background-color: #afadab; 
+    background-color: rgba(0, 0, 0, 0.1);
     margin-top: auto;
     display: flex;
 }
@@ -64,6 +61,7 @@ html , body {
 .button {
     margin: auto;
     background-color: transparent;
+    font-family: 'Courier New', monospace;
     text-decoration: underline;
     border: none;
     cursor: pointer;
@@ -80,8 +78,8 @@ html , body {
     bottom: 0;
     left: 0;
     right: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Courier New', monospace;
+    background-color: rgba(0, 0, 0, 0.2);
     visibility: hidden;
     opacity: 0;
 
@@ -95,12 +93,12 @@ html , body {
 
 .popup_conteiner {
     max-width: 615px;
-    background-color: #cecdcb;
+    background-color: rgba(0, 0, 0, 0.6);
     margin: auto;
     padding: 20px 40px;
     font-size: 24px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 }
 
 @media (max-width: 425px) {
@@ -120,7 +118,7 @@ html , body {
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 }
 
 .popup_image {
@@ -139,4 +137,8 @@ html , body {
     padding: 15px;
     font-size: 16px;
     text-align: left;
+}
+
+a {
+    color: #ffffff;
 }
