@@ -1,0 +1,156 @@
+html , body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', monospace;
+    line-height: 1.4;
+}
+
+.page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slideshow_container {
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    opacity: .5;
+}
+
+.mySlides {
+    display: none;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.experience {
+    padding: 20px 20px;
+    width: 60%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 100%;
+    padding: 20px 20px;
+}
+
+.footer {
+    min-height: 72px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    display: flex;
+}
+
+.button {
+    margin: auto;
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
+.popup {
+    position:absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup_conteiner {
+    max-width: 615px;
+    background-color: rgba(163, 160, 160, 0.9);
+    margin: auto;
+    padding: 20px 40px;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media (max-width: 425px) {
+    .popup_conteiner {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 8px 16px;
+    }
+    .popup_title {
+    font-size: 27px;
+    line-height: 33px;
+    }
+}
+
+.popup_title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.popup_image {
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.poppup_description {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.popup_list {
+    margin: 2px;
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+a {
+    color: #ffffff;
+}
